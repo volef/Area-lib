@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>8</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Tests\**" />
+    <Compile Remove="Tests\bin\**" />
+    <Compile Remove="Tests\obj\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Tests\**" />
+    <EmbeddedResource Remove="Tests\bin\**" />
+    <EmbeddedResource Remove="Tests\obj\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Tests\**" />
+    <None Remove="Tests\bin\**" />
+    <None Remove="Tests\obj\**" />
+  </ItemGroup>
+
+</Project>
