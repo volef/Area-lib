@@ -1,7 +1,0 @@
-/*
-т.к.это связь многие ко многим => есть промежуточная таблица (у меня это ProductCategory)
-*/
-SELECT prod.[name], cat.[name]
-  FROM [test].[dbo].[Product] AS prod 
-  LEFT JOIN [test].[dbo].[ProductCategory] AS prodcat ON prod.id=prodcat.productId
-  LEFT JOIN [test].[dbo].[Category] AS cat ON prodcat.categoryId=cat.id
